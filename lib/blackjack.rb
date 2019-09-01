@@ -44,6 +44,7 @@ def hit?(card_total)
       new_card = deal_card
       card_total += new_card
       puts "TOTAL AFTER: #{card_total}"
+      break
     else
       invalid_command
       prompt_user
