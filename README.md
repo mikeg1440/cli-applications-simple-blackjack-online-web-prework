@@ -204,6 +204,7 @@ describe "#display_card_total" do
   ....
 ```
 
+
 This test is telling us the following things about the method called
 `display_card_total`:
 
