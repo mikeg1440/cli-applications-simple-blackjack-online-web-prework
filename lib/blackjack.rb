@@ -79,4 +79,4 @@ def runner1
 end
     
     
-puts hit?(7)
+# puts hit?(7)
