@@ -44,7 +44,7 @@ def hit?(card_total)
     # puts "TOTAL AFTER: #{card_total}"
   else
     invalid_command
-    card_total = hit?()
+    card_total += hit?()
   end
   
   card_total
