@@ -38,13 +38,10 @@ def hit?(card_total)
 
   loop do
     if resp.downcase == "s"
-      # puts "Returning #{card_total}"
       return card_total
     elsif resp.downcase == "h"
-      # puts "TOTAL: #{card_total}"
       new_card = deal_card
       card_total += new_card
-      # puts "TOTAL AFTER: #{card_total}"
       break
     else
       invalid_command
