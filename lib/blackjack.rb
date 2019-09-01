@@ -38,6 +38,7 @@ def hit?(card_total)
 
   loop do
     if resp.downcase == "s"
+      puts "Returning #{total}"
       return card_total
     elsif resp.downcase == "h"
       puts "TOTAL: #{card_total}"
