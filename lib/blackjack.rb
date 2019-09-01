@@ -40,10 +40,10 @@ def hit?(card_total)
     if resp.downcase == "s"
       return card_total
     elsif resp.downcase == "h"
-      # puts "TOTAL: #{card_total}"
+      puts "TOTAL: #{card_total}"
       new_card = deal_card
       card_total += new_card
-      # puts "TOTAL AFTER: #{card_total}"
+      puts "TOTAL AFTER: #{card_total}"
     else
       invalid_command
       prompt_user
@@ -80,3 +80,6 @@ def runner
   end_game
   
 end
+
+
+
