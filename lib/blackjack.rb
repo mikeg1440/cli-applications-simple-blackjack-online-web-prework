@@ -42,7 +42,7 @@ def hit?(card_total)
     elsif resp.downcase == "h"
       card_total += deal_card
     else
-      puts "Please enter a valid command"
+      invalid_command
     end
     
   end  
