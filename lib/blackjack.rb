@@ -82,4 +82,4 @@ def runner
 end
 
 
-
+puts hit?(7)
