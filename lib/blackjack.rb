@@ -63,5 +63,20 @@ end
 # get every test to pass before coding runner below #
 #####################################################
 
+def runner
+
+  welcome
+  
+  card_total += initial_round
+  
+  until card_total >= 21 do
     
-# puts hit?(7)
+    card_total += hit?(card_total)
+    
+    display_card_total(card_total)
+    
+  end
+  
+  end_game
+  
+end
