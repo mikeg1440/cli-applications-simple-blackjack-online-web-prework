@@ -36,7 +36,7 @@ def hit?(card_total)
   resp = get_user_input
 
 
-  until resp.downcase == "s" || resp.downcase == "h" do
+  loop do
     if resp.downcase == "s"
       return card_total
     elsif resp.downcase == "h"
