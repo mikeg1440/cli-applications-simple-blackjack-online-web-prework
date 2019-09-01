@@ -40,7 +40,9 @@ def hit?(card_total)
     if resp.downcase == "s"
       return card_total
     elsif resp.downcase == "h"
+      puts "TOTAL: #{card_total}"
       card_total += deal_card()
+      puts "TOTAL AFTER: #{card_total{"
     else
       invalid_command
     end
