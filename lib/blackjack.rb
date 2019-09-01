@@ -83,4 +83,4 @@ def runner1
 end
     
     
-# puts initial_round
+puts hit?
