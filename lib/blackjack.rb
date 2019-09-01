@@ -32,6 +32,7 @@ end
 def hit?(card_total)
   
   prompt_user
+  
   resp = get_user_input
 
   if resp.downcase == "s"
@@ -43,6 +44,7 @@ def hit?(card_total)
     # puts "TOTAL AFTER: #{card_total}"
   else
     invalid_command
+    hit?()
   end
   
   card_total
