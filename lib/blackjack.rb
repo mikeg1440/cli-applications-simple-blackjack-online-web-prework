@@ -34,7 +34,6 @@ def hit?(card_total)
   
   resp = get_user_input
 
-
   loop do
     if resp.downcase == "s"
       return card_total
