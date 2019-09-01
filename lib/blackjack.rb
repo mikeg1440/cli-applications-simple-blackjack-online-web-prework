@@ -31,11 +31,11 @@ end
 
 def hit?(card_total)
   
-  resp = get_user_input
-  
   until resp.downcase == "h" || resp.downcase == "s" do
     
     prompt_user
+    resp = get_user_input
+
     
     if resp.downcase == "s"
       return card_total
