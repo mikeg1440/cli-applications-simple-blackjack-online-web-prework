@@ -72,11 +72,7 @@ def runner1
   
   until card_total >= 21 do
     
-    resp = prompt_user
     
-    if resp.downcase == "h"
-      card_total += deal_card
-    end
   
   end  
   
