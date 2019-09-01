@@ -35,16 +35,20 @@ def hit?(card_total)
   
   resp = get_user_input
 
-  if resp.downcase == "s"
-    return card_total
-  elsif resp.downcase == "h"
-    # puts "TOTAL: #{card_total}"
-    new_card = deal_card
-    card_total += new_card
-    # puts "TOTAL AFTER: #{card_total}"
-  else
-    invalid_command
-    card_total += hit?()
+
+  until resp.downcase == "s" || resp.downcase == "h" do
+    if resp.downcase == "s"
+      return card_total
+    elsif resp.downcase == "h"
+      # puts "TOTAL: #{card_total}"
+      new_card = deal_card
+      card_total += new_card
+      # puts "TOTAL AFTER: #{card_total}"
+    else
+      invalid_command
+      prompt_user
+    end
+
   end
   
   card_total
