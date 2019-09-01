@@ -30,17 +30,18 @@ def initial_round
 end
 
 def hit?(card_total)
-  prompt_user
   
   resp = get_user_input
   
-  if resp.downcase == "s"
-    return card_total
-  elsif resp.downcase == "h"
-    card_total += deal_card
-  else
-    puts "Please enter a valid command"
-  end
+  until resp.downcase == "h" || resp.downcase == "s" do
+    if resp.downcase == "s"
+      return card_total
+    elsif resp.downcase == "h"
+      card_total += deal_card
+    else
+      puts "Please enter a valid command"
+    end
+  end  
   
   card_total
 end
